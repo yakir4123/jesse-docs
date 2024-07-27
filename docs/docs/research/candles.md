@@ -81,7 +81,7 @@ get_candles(exchange, symbol, timeframe, start_date, finish_date)
 **Example:**
 
 ```py
-eth_candles = research.get_candles('Binance', 'ETH-USDT', '4h', '2019-07-28', '2019-09-28')
+_, eth_candles = research.get_candles('Binance', 'ETH-USDT', '4h', jh.date_to_timestamp('2019-07-28'), jh.date_to_timestamp('2019-09-28'))
 
 print(eth_candles[0])
 # array([
